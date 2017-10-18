@@ -1,7 +1,7 @@
 /**
  * 
  */
-package gaurav.devops.selenium.test;
+package minaxi.devops.selenium.test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import junit.framework.Assert;
 
 /**
- * @author SNEHASISH_SHITH
+ * @author Minaxi Joshi
  *
  */
 @SuppressWarnings("deprecation")
@@ -30,11 +30,11 @@ public class WebAppSeleniumTest {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
     	capability.setBrowserName("chrome");
     	capability.setPlatform(Platform.LINUX);
-    	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capability);
-		driver.get("http://192.168.99.100:8085/CounterWebApp/");
+    	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.102:4444/wd/hub"), capability);
+		driver.get("http://192.168.0.102:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
-    	if(!header.startsWith("Gaurav"))
+    	if(!header.startsWith("Minaxi"))
     	{
     		System.out.println("Test Case Failed !!!!");
     		System.out.println("Header text is "+ header);
@@ -58,8 +58,8 @@ public class WebAppSeleniumTest {
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
-    	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capability);
-    	driver.get("http://192.168.99.100:8085/CounterWebApp/");
+    	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.102:4444/wd/hub"), capability);
+    	driver.get("http://192.168.0.102:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
     	if(!header.startsWith("Gaurav"))
