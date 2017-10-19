@@ -62,7 +62,7 @@ public class WebAppSeleniumTest {
     	driver.get("http://192.168.0.102:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
-    	if(!header.startsWith("Gaurav"))
+    	if(!header.startsWith("Minaxi"))
     	{
     		System.out.println("Firefox Test Case Failed !!!!");
     		System.out.println("Header text is "+ header);
