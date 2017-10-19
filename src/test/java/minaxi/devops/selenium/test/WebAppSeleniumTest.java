@@ -36,13 +36,13 @@ public class WebAppSeleniumTest {
     	String header = body.getText();
     	if(!header.startsWith("Minaxi"))
     	{
-    		System.out.println("Test Case Failed !!!!");
+    		System.out.println("Chrome Test Case Failed !!!!");
     		System.out.println("Header text is "+ header);
     		Assert.assertTrue(false);
     	}
     	else
     	{
-    		System.out.println("Test Case Passed ........");
+    		System.out.println("Chrome Test Case Passed ........");
     		System.out.println("Header text is "+ header);
     		Assert.assertTrue(true);
     	}
