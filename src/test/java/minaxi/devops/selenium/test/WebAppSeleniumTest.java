@@ -31,7 +31,7 @@ public class WebAppSeleniumTest {
     	capability.setBrowserName("chrome");
     	capability.setPlatform(Platform.LINUX);
     	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.107:4444/wd/hub"), capability);
-		driver.get("http://localhost:8085/CounterWebApp/");
+		driver.get("http://127.0.0.1:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
     	if(!header.startsWith("Minaxi"))
@@ -59,7 +59,7 @@ public class WebAppSeleniumTest {
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
     	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.0.107:4444/wd/hub"), capability);
-    	driver.get("http://localhost:8085/CounterWebApp/");
+    	driver.get("http://127.0.0.1:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
     	if(!header.startsWith("Minaxi"))
