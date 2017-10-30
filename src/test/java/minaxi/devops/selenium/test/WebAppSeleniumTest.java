@@ -30,7 +30,7 @@ public class WebAppSeleniumTest {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
     	capability.setBrowserName("chrome");
     	capability.setPlatform(Platform.LINUX);
-    	WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+    	WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
 		driver.get("http://localhost:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
@@ -58,7 +58,7 @@ public class WebAppSeleniumTest {
     	DesiredCapabilities capability = DesiredCapabilities.firefox();
     	capability.setBrowserName("firefox");
     	capability.setPlatform(Platform.LINUX);
-    	WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+    	WebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), capability);
     	driver.get("http://localhost:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
