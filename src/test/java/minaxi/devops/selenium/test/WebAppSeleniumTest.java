@@ -18,7 +18,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import junit.framework.Assert;
 
 /**
- * @author Minaxi Joshi
+ * @author Minaxi Joshi 
  *
  */
 @SuppressWarnings("deprecation")
