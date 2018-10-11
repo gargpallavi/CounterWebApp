@@ -1,7 +1,7 @@
 /**
  * 
  */
-package minaxi.devops.selenium.test;
+package pallavi.devops.selenium.test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,10 +17,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import junit.framework.Assert;
 
-/**
- * @author Minaxi Joshi 
- *
- */
+
 @SuppressWarnings("deprecation")
 public class WebAppSeleniumTest {
 
@@ -34,7 +31,7 @@ public class WebAppSeleniumTest {
 		driver.get("http://192.168.0.101:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
-    	if(!header.startsWith("Minaxi"))
+    	if(!header.startsWith("Pallavi"))
     	{
     		System.out.println("Chrome Test Case Failed !!!!");
     		System.out.println("Header text is "+ header);
@@ -62,7 +59,7 @@ public class WebAppSeleniumTest {
     	driver.get("http://192.168.0.101:8085/CounterWebApp/");
     	WebElement body = driver.findElement(By.tagName("h1"));
     	String header = body.getText();
-    	if(!header.startsWith("Minaxi"))
+    	if(!header.startsWith("Pallavi"))
     	{
     		System.out.println("Firefox Test Case Failed !!!!");
     		System.out.println("Header text is "+ header);
